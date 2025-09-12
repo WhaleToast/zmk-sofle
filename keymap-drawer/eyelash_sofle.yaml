@@ -55,8 +55,8 @@ layers:
   - {t: function, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - LGUI
   - $$mdi:apple-keyboard-option$$
+  - LGUI
   - function
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
