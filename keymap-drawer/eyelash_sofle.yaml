@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
   - END
-  - $$mdi:arrow-up-bold$$
+  - PgUp
   - HOME
   - {t: Sft+-, s: Sft+_}
   - {t: Sft+0, s: Sft+)}
@@ -99,9 +99,9 @@ layers:
   - {t: Sft+9, s: Sft+(}
   - {t: Sft+2, s: Sft+@}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: AltGr+8, s: AltGr+*, type: held}
   - {t: AltGr+9, s: AltGr+(}
@@ -114,7 +114,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ins
+  - PgDn
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
