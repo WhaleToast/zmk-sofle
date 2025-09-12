@@ -64,13 +64,19 @@
             display-name = "LAYER0";
         };
 
-        layer_1 {
+         layer_1 {
             bindings = <
-&kp GRAVE      &kp EXCLAMATION   &kp AT_SIGN      &kp HASH              &trans                 &trans                  &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&kp MINUS      &kp TILDE         &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH    &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&kp DOLLAR     &kp ASTERISK      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES       &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LESS_THAN  &kp GREATER_THAN  &kp PLUS         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION            &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE     &rgb_ug RGB_TOG   &rgb_ug RGB_EFF  &trans                &trans                 &trans                  &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+// For Norwegian layout, here are the correct keycodes:
+// ! = LS(N1), " = LS(N2), # = LS(N3), $ = RA(N4), % = LS(N5)
+// & = LS(N6), / = LS(N7), ( = LS(N8), ) = LS(N9), = = LS(N0)
+// ? = LS(PLUS), ` = LS(EQUAL), @ = RA(N2), £ = RA(N3), € = RA(E)
+// { = RA(N7), [ = RA(N8), ] = RA(N9), } = RA(N0), \ = RA(MINUS)
+
+&kp LS(EQUAL)  &kp LS(N1)       &kp RA(N2)       &kp LS(N3)            &kp RA(N4)             &kp LS(N5)              &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&kp LS(PLUS)   &kp LS(EQUAL)    &kp LS(N0)       &kp RA(N7)            &kp RA(N0)             &kp RA(MINUS)           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp LS(PLUS)      &kp LS(N0)
+&kp RA(N4)     &kp LS(RBKT)     &kp LS(N2)       &kp LS(N8)            &kp LS(N9)             &kp LS(N2)              &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp RA(N8)        &kp RA(N9)
+&kp NUBS       &kp LS(NUBS)     &kp RBKT         &kp RA(N8)            &kp RA(N9)             &kp LS(PLUS)            &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&kp C_MUTE     &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans                &trans                 &trans                  &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
