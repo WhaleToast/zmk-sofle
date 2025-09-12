@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
   - Z
   - X
   - C
@@ -80,7 +80,7 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft++
-  - {t: Sft+=, s: Sft++}
+  - {t: Ctl+=, s: Ctl++}
   - {t: Sft+0, s: Sft+)}
   - {t: AltGr+7, s: AltGr+&}
   - {t: AltGr+0, s: AltGr+)}
