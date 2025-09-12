@@ -88,11 +88,11 @@
 
         symbols_layer {
             bindings = <
-&kp CAPS       &kp LS(N1)       &kp RA(N2)       &kp LS(N3)  &trans      &trans           &trans  &trans     &trans    &trans      &trans     &trans         &trans
-&kp LS(MINUS)  &kp RA(RBKT)     &kp LS(N0)       &kp RA(N7)  &kp RA(N0)  &kp EQUAL        &trans  &kp PG_UP  &kp END   &kp UP      &kp HOME   &kp LS(MINUS)  &kp LS(N0)
-&kp RA(N4)     &kp LS(BSLH)     &kp BSLH         &kp LS(N8)  &kp LS(N9)  &kp LS(N2)       &trans  &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp RA(N8)     &kp RA(N9)
-&kp NUBS       &kp LS(NUBS)     &kp MINUS        &kp RA(N8)  &kp RA(N9)  &kp LS(MINUS)    &trans  &trans     &trans    &kp INSERT  &kp F11    &kp F12        &trans
-&trans         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp LGUI    &kp CAPS    &kp SPACE        &trans  &trans     &trans    &trans      &trans     &trans
+&kp CAPS       &kp LS(N1)       &kp RA(N2)       &kp LS(N3)  &trans      &trans           &trans  &trans          &trans    &trans         &trans     &trans         &trans
+&kp LS(MINUS)  &kp RA(RBKT)     &kp LS(N0)       &kp RA(N7)  &kp RA(N0)  &kp EQUAL        &trans  &kp PG_UP       &kp END   &kp PAGE_UP    &kp HOME   &kp LS(MINUS)  &kp LS(N0)
+&kp RA(N4)     &kp LS(BSLH)     &kp BSLH         &kp LS(N8)  &kp LS(N9)  &kp LS(N2)       &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW   &kp RIGHT  &kp RA(N8)     &kp RA(N9)
+&kp NUBS       &kp LS(NUBS)     &kp MINUS        &kp RA(N8)  &kp RA(N9)  &kp LS(MINUS)    &trans  &trans          &trans    &kp PAGE_DOWN  &kp F11    &kp F12        &trans
+&trans         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp LGUI    &kp CAPS    &kp SPACE        &trans  &trans          &trans    &trans         &trans     &trans
             >;
         };
 
