@@ -66,12 +66,12 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '3', h: toggle}
   layer1:
-  - {t: '`', s: '~'}
-  - '!'
-  - '@'
-  - '#'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+=, s: Sft++}
+  - {t: Sft+1, s: Sft+!}
+  - {t: AltGr+2, s: AltGr+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: Sft+5, s: Sft+%}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
@@ -79,38 +79,38 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - '~'
-  - {t: '=', s: +}
-  - '{'
-  - '}'
-  - \
+  - Sft++
+  - {t: Sft+=, s: Sft++}
+  - {t: Sft+0, s: Sft+)}
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+0, s: AltGr+)}
+  - {t: AltGr+-, s: AltGr+_}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - END
   - $$mdi:arrow-up-bold$$
   - HOME
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - $
-  - '*'
-  - {t: '''', s: '"'}
-  - (
-  - )
-  - '"'
+  - Sft++
+  - {t: Sft+0, s: Sft+)}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+2, s: Sft+@}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
+  - NUBS
+  - Sft+NUBS
   - {t: ']', s: '}'}
-  - <
-  - '>'
-  - +
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '?'
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
+  - Sft++
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
   - RGB BRD
