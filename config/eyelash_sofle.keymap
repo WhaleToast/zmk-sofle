@@ -8,7 +8,7 @@
     behaviors {
         // Home row mods for left hand
 
-     td_f: tap_dance_j {
+     td_f: tap_dance_f {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_F";
             #binding-cells = <0>;
@@ -17,14 +17,14 @@
         };
         
         // Modified left homerow mod for F that uses tap-dance
-        hmr_j: homerow_mods_left_f {
+        hmr_f: homerow_mods_left_f {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_F";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <125>;
             flavor = "balanced";
-            bindings = <&kp>, <&td_j>;
+            bindings = <&kp>, <&td_f>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
             hold-trigger-on-release;
         };
