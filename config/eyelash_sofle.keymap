@@ -8,7 +8,7 @@
     behaviors {
         // Home row mods for left hand
 
-     td_j: tap_dance_f {
+     td_j: tap_dance_j {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_J";
             #binding-cells = <0>;
