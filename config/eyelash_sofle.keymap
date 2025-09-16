@@ -8,6 +8,28 @@
     behaviors {
         // Home row mods for left hand
 
+     td_j: tap_dance_f {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_J";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp J>, <&kp J>;
+        };
+        
+        // Modified right homerow mod for J that uses tap-dance
+        hmr_j: homerow_mods_left_j {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_J";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_j>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
+            hold-trigger-on-release;
+        };
+
+
      td_f: tap_dance_f {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_F";
@@ -98,7 +120,7 @@
             bindings = <
 &kp GRAVE  &kp N1     &kp N2        &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6    &kp N7        &kp N8        &kp N9    &kp N0           &kp MINUS
 &kp TAB    &kp Q      &kp W         &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y     &kp U         &kp I         &kp O     &kp P            &kp LBKT
-&mo 2      &kp A      &kp S         &hml LCTRL D  &hmr_f LSHFT 0  &kp G        &kp LEFT_ARROW   &kp H     &hmr RSHFT J  &hmr RCTRL K  &kp L     &lt_semi 1 SEMI  &kp SQT
+&mo 2      &kp A      &kp S         &hml LCTRL D  &hmr_f LSHFT 0  &kp G        &kp LEFT_ARROW   &kp H     &hmr_j RSHFT 0  &hmr RCTRL K  &kp L     &lt_semi 1 SEMI  &kp SQT
 &kp ESC    &kp Z      &kp X         &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA     &kp DOT   &kp FSLH         &kp DEL
 &trans     &kp LCTRL  &kp LEFT_ALT  &kp LGUI      &kp LEFT_ALT  &kp SPACE    &kp ENTER        &kp BSPC  &kp ENTER     &mo 1         &kp RALT  &tog 3
             >;
