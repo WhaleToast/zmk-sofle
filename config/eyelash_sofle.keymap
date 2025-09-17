@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/rgb.h>
 // new comment
 // another new comment
+// another new comment
 / {
     behaviors {
 
