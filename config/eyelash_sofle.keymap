@@ -42,6 +42,7 @@
         };
 
         mt_h: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
             tapping-term-ms = <150>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
