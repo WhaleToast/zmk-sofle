@@ -45,7 +45,7 @@
             tapping-term-ms = <150>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap"
+            display-name = "Mod-Tap";
         };
 
         lt_enter: layer_tap_enter {
