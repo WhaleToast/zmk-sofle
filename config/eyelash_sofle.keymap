@@ -6,53 +6,6 @@
 
 / {
     behaviors {
-        // Home row mods for left hand
-
-        td_j: tap_dance_j {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_J";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp J>, <&kp J>;
-        };
-
-        // Modified right homerow mod for J that uses tap-dance
-
-        hmr_j: homerow_mods_left_j {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT_J";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&kp>, <&td_j>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
-            hold-trigger-on-release;
-        };
-
-        td_f: tap_dance_f {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_F";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp F>, <&kp F>;
-        };
-
-        // Modified left homerow mod for F that uses tap-dance
-
-        hmr_f: homerow_mods_left_f {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT_F";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&kp>, <&td_f>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
-            hold-trigger-on-release;
-        };
 
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
@@ -66,8 +19,6 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 42 43 44 45 46 47>;
         };
 
-        // Home row mods for right hand
-
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
@@ -79,8 +30,6 @@
 
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
         };
-
-        // Layer tap behaviors
 
         lt_bspc: layer_tap_backspace {
             compatible = "zmk,behavior-hold-tap";
