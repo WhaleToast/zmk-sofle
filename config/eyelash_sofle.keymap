@@ -7,67 +7,14 @@
 / {
     behaviors {
 
-        hml: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 42 43 44 45 46 47>;
-        };
-
-        hmr: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 48 49 50 51 52 53>;
-        };
-
-        lt_bspc: layer_tap_backspace {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_BACKSPACE";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&mo>, <&kp>;
-        };
-
         mt_h: mod_tap {
             compatible = "zmk,behavior-hold-tap";
-            tapping-term-ms = <150>;
-            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
         };
 
-        lt_enter: layer_tap_enter {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_ENTER";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&mo>, <&kp>;
-        };
-
-        lt_semi: layer_tap_semicolon {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_SEMICOLON";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
-            bindings = <&mo>, <&kp>;
-        };
     };
 
     keymap {
@@ -79,7 +26,7 @@
             bindings = <
 &kp GRAVE  &kp N1     &kp N2        &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6    &kp N7        &kp N8        &kp N9    &kp N0           &kp MINUS
 &kp TAB    &kp Q      &kp W         &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y     &kp U         &kp I         &kp O     &kp P            &kp LBKT
-&mo 2      &kp A      &kp S         &mt_h LCTRL D &mt_h LSHFT F &kp G        &kp LEFT_ARROW   &kp H     &mt_h RSHFT J &mt_h RCTRL K &kp L     &lt_semi 1 SEMI  &kp SQT
+&mo 2      &kp A      &kp S         &mt_h LCTRL D &mt_h LSHFT F &kp G        &kp LEFT_ARROW   &kp H     &mt_h RSHFT J &mt_h RCTRL K &kp L     &kp 1 SEMI       &kp SQT
 &kp ESC    &kp Z      &kp X         &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N     &kp M         &kp COMMA     &kp DOT   &kp FSLH         &kp DEL
 &trans     &kp LCTRL  &kp LEFT_ALT  &kp LGUI      &kp LEFT_ALT  &kp SPACE    &kp ENTER        &kp BSPC  &kp ENTER     &mo 1         &kp RALT  &tog 3
             >;
