@@ -46,7 +46,7 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap"
-        }
+        };
 
         lt_enter: layer_tap_enter {
             compatible = "zmk,behavior-hold-tap";
